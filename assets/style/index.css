@@ -1,0 +1,53 @@
+p{
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+
+}
+.sekil img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+ }
+.headerLeft{
+   display: flex;
+}
+.headerLeft div  {
+    justify-content: center;
+}
+.ferdi{
+  border-radius: 10px;
+  border: 1px solid var(--primaryColor);
+}
+.korporativ{
+     border-radius: 10px;
+  border: 1px solid gray;
+}
+.ferdi p{
+    color: var(--primaryColor);
+  
+}
+.odenis{
+    padding-right: 20px;
+}
+.karqo img{
+   width: 200px;
+   height: 200px;
+   object-fit: contain;
+}
+hr{border: gray;}
+.qutu{
+    display: flex;
+}
+.qutu2{
+   width: 100%;
+}
+
+.link a{
+    color: black;
+}
+.book{
+    background-color: var(--primaryColor);
+}
+.book a{
+    color: white;
+}
