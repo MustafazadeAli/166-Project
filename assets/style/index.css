@@ -39,7 +39,7 @@ p{
 }
 .korporativ{
      border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid rgba(128, 128, 128, 0.541);
 }
 .ferdi p{
     color: var(--primaryColor);
@@ -48,15 +48,19 @@ p{
 .odenis{
     padding-right: 20px;
 }
+.navbar{
+    height: 20%;
+}
 .karqo{
     margin-right: 100px;
 }
 .karqo img{
-   width: 300px;
-   height: 300px;
+   width: 50%;
+   height: 100%;
    object-fit: contain;
 }
 .search{
+    width: 100%;
     display: flex;
     align-items: center;
 }
@@ -73,7 +77,15 @@ hr{border: gray;}
 }
 .book{
     background-color: var(--primaryColor);
+    border-radius: 7px;
 }
 .book a{
     color: white;
+}
+a:hover{
+    color: black;
+}
+.dropdown button{
+ background-color: white;
+ color: black;
 }
