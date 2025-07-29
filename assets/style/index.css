@@ -4,7 +4,6 @@
 p{
     font-size: 16px;
     font-family: "Montserrat", sans-serif;
-
 }
 .sekil{
     padding-bottom: 20px;
@@ -43,10 +42,15 @@ p{
 }
 .ferdi p{
     color: var(--primaryColor);
-  
+}
+.korporativ p{
+    color: black;
 }
 .odenis{
     padding-right: 20px;
+}
+.odenis p{
+    color: black;
 }
 .navbar{
     height: 20%;
@@ -89,6 +93,13 @@ a:hover{
  background-color: white;
  color: black;
 }
+.subOption ul{
+  display: flex;
+}
+.subOption li::after{
+    content: url( &#11166;);
+}
+
 .link ul{
     display: flex;
     flex-direction: row;
@@ -101,4 +112,89 @@ a:hover{
     color: #FFCC4D;
     padding-bottom: 20px;
    border-bottom: 2px solid #FFCC4D;
+}
+.haqqimizdaContainer>div{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.line{
+    top: 100px;
+    width: 52px;
+    height: 0px;
+    border: 1px solid var(--primaryColor);
+    gap: 12px;
+}
+.haqqimizdaContainerleft1 {
+    display: flex;
+    align-items: center;
+}
+.p{
+    font-size: larger;
+    font-style: italic;
+}
+.haqqimizdaContainerleft2{
+    margin-bottom: 64px;
+}
+.about{
+    font: 400 16px;
+    color: #4C4C4C;
+    line-height: 26px;
+}
+.img{
+    width: 600px;
+    height: 375px;
+    top: 450px;
+    left: 108px;
+    border-radius: 8px;
+   object-fit: cover;
+}
+
+/* .class{
+    margin-bottom: 200px;
+} */
+.haqqimizdaTitle p {
+ font: 600 32px;
+ color: black;
+}
+.xidmetsayi{
+ background-color: black;
+ width: 604px;
+ height: 600px;
+ left: 110px;
+ 
+}
+.xidmetsayi h2{
+    color: white;
+    font-size: bold;
+    left: 108px;
+    display: flex;
+    justify-content: center;
+}
+ 
+.butContainer p{
+  color: black;
+  word-spacing: 6px;
+}
+.missiya{
+    font-size: 32px;
+}
+.butContainerText{
+    width: 504px;
+}
+.svg1 div {
+   display: flex;
+   gap: 30px;
+}
+.first{
+    margin-bottom: 30px;
+}
+.bizNeceIsleyirikText{
+    color: black;
+    font-weight: 600;
+    font-style: oblique;
+    font-size: 32px;
+}
+.bizNeceIsleyirik div p{
+   color: #000;
 }
