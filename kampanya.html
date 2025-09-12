@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team</title>
+    <title>Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -27,7 +27,7 @@
                 <p>Korporativ Müştərilər</p>
               </button>
             </div>
-            <div class="col-sm-6 col-12 d-flex justify-content-end">
+            <div class="col-sm-6 col-12 cardSectionContainer">
               <button class="cardSection">
                 <div>
                   <svg
@@ -67,12 +67,11 @@
             </div>
           </div>
         </header>
-
         <hr />
         <nav>
           <div class="myNavbar">
-            <div>
-              <img src="./assets/image/logo.png" alt="166 cargo" />
+            <div class="logo166">
+              <img src="./assets/image/logo.jpg" alt="166 cargo" />
             </div>
 
             <div class="navbarRight">
@@ -154,6 +153,10 @@
                 </ul>
               </div>
 
+              <div class="hamburgerMenu">
+                <img src="./assets/image/icon/menu.png" alt="Hamburger menu" />
+              </div>
+
               <button type="button" class="bookACall ms-4">
                 <div>
                   <svg
@@ -177,60 +180,49 @@
           </div>
         </nav>
         <hr />
-
         <main>
-          <section class="breadcrumbSection">
-            <ul>
-              <li>
-                <a href="#">
-                  <svg
-                    width="18"
-                    height="20"
-                    viewBox="0 0 18 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M7.54916 0.533177C8.38719 -0.173819 9.61281 -0.173819 10.4508 0.533177L17.2008 6.22772C17.7076 6.65523 18 7.28447 18 7.94747V17.7504C18 18.7169 17.2165 19.5004 16.25 19.5004H13.25C12.2835 19.5004 11.5 18.7169 11.5 17.7504V12.7504C11.5 12.3362 11.1642 12.0004 10.75 12.0004H7.25C6.83579 12.0004 6.5 12.3362 6.5 12.7504V17.7504C6.5 18.7169 5.7165 19.5004 4.75 19.5004H1.75C0.783502 19.5004 0 18.7169 0 17.7504V7.94747C0 7.28447 0.292405 6.65523 0.799155 6.22772L7.54916 0.533177Z"
-                      fill="#242424"
-                    />
-                  </svg>
-                </a>
-              </li>
-              <li><a href="#"> Parent </a></li>
-              <li><a href="#"> Child </a></li>
-              <li><a href="#"> Sub Option </a></li>
-              <li><a href="#"> The Chosen One </a></li>
-            </ul>
-          </section>
+          <div class="ustaXidmeti">
+            <div class="ustaXidmetiLeft">
+              <div>
+                <svg width="527" height="282" viewBox="0 0 527 282" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<rect width="527" height="282" rx="8" fill="url(#pattern0_135_480)"/>
+<defs>
+<pattern id="pattern0_135_480" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_135_480" transform="matrix(0.00390625 0 0 0.00729998 0 -0.434397)"/>
+</pattern>
+<image id="image0_135_480" width="256" height="256" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"/>
+</defs>
+</svg>
+              </div>
+              <div class="ustaXidmetiLeftWritting">
+             <p class="ustaXidmetiLeftOne">
+              Usta xidmətlərimizə 20% endirim
+             </p>
+             <p class="ustaXidmetiLeftTwo">
+              Usta xidməti endirimlərimiz Gəncədə davam etməkdədir!
+8-31 Yanvar tarixləri ərzində Usta xidmətlərimizdən istifadə et və 20% endirimdən yararlan
+             </p>
+              </div>
+            </div>
+            <div class="ustaXidmetiRight">
+           <p>
+            Lorem Impus
+           </p>
+             <div>
+               <input type="text" placeholder="Name*">
+               <input type="text" placeholder="Phone number*">
+              <input type="button" placeholder="Göndər">
 
-          <section class="secondSection">
-            <ul>
-              <li><a href="#"> Haqqimizda </a></li>
-              <li>
-                <a
-                  href="#"
-                  style="
-                    color: var(--mainColor);
-                    border-bottom: 1px solid var(--mainColor);
-                  "
-                >
-                  Komandamiz
-                </a>
-              </li>
-              <li><a href="#">Mediada biz</a></li>
-              <li><a href="#">Blog</a></li>
-              <li><a href="#">Tez-tez verilən suallar</a></li>
-              <li><a href="#"> Qalereya </a></li>
-            </ul>
-          </section>
+             </div>
+            </div>
+          </div>
         </main>
       </div>
 
       <footer class="footer">
         <div class="container">
           <div class="row">
-            <div class="col-sm-4 col-12">
+            <div class="col-md-4 col-12">
               <div class="footerTitle">
                 <p>Xidmətlər</p>
               </div>
@@ -265,7 +257,7 @@
               </ul>
             </div>
 
-            <div class="col-sm-4 col-12">
+            <div class="col-md-4 col-12">
               <div class="footerTitle">
                 <p>Faydali linklər</p>
               </div>
@@ -281,7 +273,7 @@
               </ul>
             </div>
 
-            <div class="col-sm-4 col-12">
+            <div class="col-md-4 col-12">
               <div class="footerTitle">
                 <p>Əlaqə</p>
               </div>
@@ -330,5 +322,11 @@
         </div>
       </footer>
     </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

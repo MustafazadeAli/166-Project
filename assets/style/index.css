@@ -1,225 +1,220 @@
-*{
-    box-sizing: border-box;
-}
-p{
-    font-size: 16px;
-    font-family: "Montserrat", sans-serif;
-}
-.sekil{
-    padding-bottom: 20px;
-}
-.sekil img{
-    width: 20px;
-    height: 20px;
-    object-fit: contain;
-   
- }
-.headerLeft{
-   display: flex;
-}
-.headerLeft div  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.headerRight{
-   display: flex;
-}
-.headerRight div{
-     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.ferdi{
-  border-radius: 10px;
-  border: 1px solid var(--primaryColor);
-}
-.korporativ{
-     border-radius: 10px;
-  border: 1px solid rgba(128, 128, 128, 0.541);
-}
-.ferdi p{
-    color: var(--primaryColor);
-}
-.korporativ p{
-    color: black;
-}
-.odenis{
-    padding-right: 20px;
-}
-.odenis p{
-    color: black;
-}
-.navbar{
-    height: 20%;
-}
-.karqo{
-    margin-right: 100px;
-}
-.karqo img{
-   width: 50%;
-   height: 100%;
-   object-fit: contain;
-}
-.search{
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-hr{border: gray;}
-.qutu{
-    display: flex;
-}
-.qutu2{
-   width: 100%;
+* {
+  box-sizing: border-box;
 }
 
-.link a{
-    color: black;
+p {
+  margin: 0;
 }
-.book{
-    background-color: var(--primaryColor);
-    border-radius: 7px;
+
+.homeHeader {
+  padding: 14px 0 20px 0;
 }
-.book a{
-    color: white;
-}
-a:hover{
-    color: black;
-}
-.dropdown button{
- background-color: white;
- color: black;
-}
-.subOption ul{
+
+.headerLeft {
   display: flex;
 }
-.subOption li:not(:last-child):after {
-    content: ">";
+
+.ferdiMusteri {
+  border-radius: 8px 0 0 8px;
+  padding: 10px;
+  border: 1px solid var(--mainColor);
+  color: var(--mainColor);
+  font: 500 14px var(--mainFont);
+  box-shadow: 0px 0px 4px 0px #0000001f;
 }
 
-.link ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.korporativMusteri {
+  display: flex;
+  align-items: center;
+  border: 1px solid 0000001f;
+  border-left: none;
+  padding: 10px;
+  border-radius: 0 8px 8px 0;
+  box-shadow: 0px 0px 4px 0px #0000001f;
 }
-.link ul li{
-    margin-right: 30px;
+
+.cardSection {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font: 500 14px var(--mainFont);
 }
-.haqqimizda{
-    color: #FFCC4D;
-    padding-bottom: 20px;
-   border-bottom: 2px solid #FFCC4D;
+
+.languageButton {
+  background-color: transparent;
+  border: none;
 }
-.haqqimizdaContainer>div{
-    display: flex;
-    gap: 24px;
-    align-items: center;
+.logo166{
+  width: 200px;
 }
-.line{
-    top: 100px;
-    width: 52px;
-    height: 0px;
-    border: 1px solid var(--primaryColor);
-    gap: 12px;
+.logo166 img {
+  width: 200px;
 }
-.haqqimizdaContainerleft1 {
-    display: flex;
-    align-items: center;
+.myNavbar {
+  padding: 6px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.p{
-    font-size: larger;
-    font-style: italic;
+
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  border: 1px solid #f3f3f3;
+  padding: 9px 0 9px 16px;
+  width: 200px;
+  gap: 10px;
 }
-.haqqimizdaContainerleft2{
-    margin-bottom: 64px;
+
+.search div input {
+  padding-right: 10px;
+  width: 100%;
 }
-.about{
-    font: 400 16px;
-    color: #4C4C4C;
-    line-height: 26px;
+
+.search div input,
+.search div input:focus,
+.search div input:active,
+.search div input:hover {
+  border: none;
+  outline: none;
 }
-.img{
-    width: 600px;
-    height: 375px;
-    top: 450px;
-    left: 108px;
-    border-radius: 8px;
-   object-fit: cover;
+
+.navbarLinks {
+  padding-left: 50px;
+}
+
+.navbarLinks > ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbarRight {
+  display: flex;
+  align-items: center;
+}
+
+.bookACall {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 136px;
+  border: none;
+  background-color: var(--mainColor);
+  color: white;
+  font: 600 16px var(--mainFont);
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.breadcrumbSection ul {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbSection ul li {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbSection ul li:not(:last-child) ::after {
+  content: ">";
+  margin: 0 10px;
+}
+
+.breadcrumbSection ul li:not(:last-child) {
+  font: 600 12px var(--mainFont);
+  color: #474747;
+}
+
+.breadcrumbSection ul li:last-child {
+  font: 500 12px var(--mainFont);
+  color: #b8b8b8;
+}
+
+.breadcrumbSection ul li a {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumbSection {
+  margin-bottom: 54px;
+}
+
+.secondSection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 86px;
+}
+
+.secondSection ul {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.secondSection ul li a {
+  font: 600 16px var(--mainFont);
+  color: #343434;
+  padding: 10px;
+}
+
+/* .secondSection ul li:first-child a {
+  color: var(--mainColor);
+  border-bottom: 1px solid var(--mainColor);
+} */
+
+.haqqimizdaContainer > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.headLine {
+  width: 52px;
+  border: 1px solid var(--mainColor);
+}
+
+.haqqimizdaContainerLeft1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.haqqimizdaContainerLeft2 p {
+  font: 400 24px var(--mainFont);
+  font-style: italic;
+}
+
+.haqqimizdaContainerLeft2 {
+  margin-bottom: 28px;
+}
+
+.about {
+  font: 400 16px var(--mainFont);
+  color: #4c4c4c;
+  line-height: 26px;
 }
 
 .haqqimizdaTitle p {
- font: 600 32px;
- color: black;
+  font: 600 32px var(--mainFont);
+  color: #111827;
 }
-.xidmetsayi{
- background-color: black;
- width: 604px;
- height: 600px;
- left: 110px;
- 
+
+.haqqimizdaContainerLeft3 {
+  width: 600px;
+  height: 375px;
 }
-.xidmetsayi h2{
-    color: white;
-    font-size: bold;
-    left: 108px;
-    display: flex;
-    justify-content: center;
-}
- 
-.butContainer p{
-  color: black;
-  word-spacing: 6px;
-}
-.missiya{
-    font-size: 32px;
-}
-.butContainerText{
-    width: 504px;
-}
-.svg1 div {
-   display: flex;
-   gap: 30px;
-}
-.first{
-    margin-bottom: 30px;
-}
-.bizNeceIsleyirikText{
-    color: black;
-    font-weight: 600;
-    font-style: oblique;
-    font-size: 32px;
-}
-.bizNeceIsleyirik div p{
-   color: #000;
-}
-.suretliXidmet {
-  color: #ffffff85;
-  border: 1px solid #eaeaea;
-  backdrop-filter: blur(4px);
+
+.haqqimizdaContainerLeft3 img {
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
-  padding: 47px 62px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  object-fit: cover;
 }
 
-.suretliXidmet div:first-child {
-  width: 58px;
-  height: 58px;
-  border-radius: 54px;
-  background: #fff6e0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.suretliXidmet div:last-child {
-  color: black;
-  font: 500 18px var(--primaryFontFamily);
-}
 .xidmetLogo {
   width: 44px;
   height: 44px;
@@ -276,11 +271,11 @@ a:hover{
 }
 
 .selectedLogo {
-  background-color: #FFCC4D;
+  background-color: var(--mainColor);
 }
 
 .bizNecəIşleyirik ul div:nth-child(2) li {
-  border-color: #FFCC4D;
+  border-color: var(--mainColor);
 }
 
 .bizNecəIşleyirik ul > div:nth-child(1) li {
@@ -333,6 +328,155 @@ a:hover{
   font: 600 18px var(--mainFont);
   color: var(--mainColor);
 }
-.caruselStars img {
-    width: 20px;
+
+.footer {
+  background-color: var(--mainColor);
+  padding: 34px 0;
+}
+
+.footerTitle {
+  margin-bottom: 12px;
+}
+
+.footerTitle p {
+  color: #312402;
+  font: 600 20px var(--mainFont);
+}
+
+.footer ul li a,
+.footer ul li {
+  color: #785801;
+  font: 300 14px var(--mainFont);
+}
+
+.footer ul li:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.hamisinaBax {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.footerHr {
+  margin-top: 78px;
+  border: 1px solid #3a2c06;
+}
+
+.copyRight {
+  text-align: center;
+  color: #b38304;
+  font: 400 14px var(--mainFont);
+}
+
+.missiyamizLeft > div {
+  background-color: #1d1d1d;
+  border-radius: 0 8px 8px 0;
+  padding: 47px 0px 47px 108px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.missiyamizLeft > div > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 20px;
+  width: max-content;
+}
+
+.missiyamizLeft > div > div:not(:last-child) {
+  border-bottom: 1px solid #343434;
+}
+
+.missiyamizLeft > div > div p:first-child {
+  color: #ffffff;
+  font: 600 36px var(--mainFont);
+}
+
+.missiyamizLeft > div > div p:last-child {
+  color: #ffffffb3;
+  font: 500 16px var(--mainFont);
+}
+
+.missiyamiz > .row:first-child {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 24px;
+}
+
+.haqqimizdaDesc {
+  font: 400 16px var(--mainFont);
+  color: #4c4c4c;
+}
+
+.missiyamizBox {
+  backdrop-filter: blur(4px);
+  border: 1px solid #eaeaea;
+  background: #ffffff4d;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 47px 62px;
+  height: 100%;
+}
+
+.missiyamizBox div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.missiyamizBox > div > div {
+  width: 58px;
+  height: 58px;
+  border-radius: 54px;
+  background-color: #fff6e0;
+}
+
+.missiyamizBox > div > p {
+  color: #111827;
+  font: 500 18px var(--mainFont);
+}
+
+.missiyamizBoxContainer > div:nth-child(-n + 2) {
+  margin-bottom: 20px;
+}
+
+.hamburgerMenu {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburgerMenu img {
+  width: 100%;
+  display: none;
+}
+
+.linksButton {
+  width: 100%;
+  height: 40px;
+  display: none;
+}
+
+.linksButton img {
+  width: 40px;
+}
+
+.cardSectionContainer {
+  display: flex;
+  justify-content: end;
+}
+.ustaXidmeti{
+  width: 90%;
+  display: flex;
+}
+.ustaXidmetiLeftOne p{
+ font-weight: 500;
+ font-size: larger;
 }

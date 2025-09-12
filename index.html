@@ -3,551 +3,714 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>166</title>
-    <link rel="stylesheet" href="assets/style/global.css" />
-    <link rel="shortcut icon" href="assets/image/logo/Favicon.jpg" />
+    <title>Home</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="./assets/style/global.css" />
+    <link rel="shortcut icon" href="./assets/image/logo/favicon.png" />
   </head>
   <body>
-    <div class="container">
-      <header>
-        <div class="row">
-          <div class="col-sm-6 col-12 headerLeft">
-            <div class="ferdi">
-              <p>Fərdi Müştərilər</p>
+    <div>
+      <div class="container">
+        <header class="homeHeader">
+          <div class="row">
+            <div class="col-sm-6 col-12 headerLeft">
+              <button class="ferdiMusteri">
+                <p>Fərdi Müştərilər</p>
+              </button>
+              <button class="korporativMusteri">
+                <p>Korporativ Müştərilər</p>
+              </button>
             </div>
-            <div class="korporativ">
-              <p>Korporativ Müştərilər</p>
+            <div class="col-sm-6 col-12 cardSectionContainer">
+              <button class="cardSection">
+                <div>
+                  <svg
+                    width="22"
+                    height="16"
+                    viewBox="0 0 22 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 0.6875H2C1.6519 0.6875 1.31806 0.825781 1.07192 1.07192C0.825781 1.31806 0.6875 1.6519 0.6875 2V14C0.6875 14.3481 0.825781 14.6819 1.07192 14.9281C1.31806 15.1742 1.6519 15.3125 2 15.3125H20C20.3481 15.3125 20.6819 15.1742 20.9281 14.9281C21.1742 14.6819 21.3125 14.3481 21.3125 14V2C21.3125 1.6519 21.1742 1.31806 20.9281 1.07192C20.6819 0.825781 20.3481 0.6875 20 0.6875ZM2 1.8125H20C20.0497 1.8125 20.0974 1.83225 20.1326 1.86742C20.1677 1.90258 20.1875 1.95027 20.1875 2V4.4375H1.8125V2C1.8125 1.95027 1.83225 1.90258 1.86742 1.86742C1.90258 1.83225 1.95027 1.8125 2 1.8125ZM20 14.1875H2C1.95027 14.1875 1.90258 14.1677 1.86742 14.1326C1.83225 14.0974 1.8125 14.0497 1.8125 14V5.5625H20.1875V14C20.1875 14.0497 20.1677 14.0974 20.1326 14.1326C20.0974 14.1677 20.0497 14.1875 20 14.1875ZM18.3125 11.75C18.3125 11.8992 18.2532 12.0423 18.1477 12.1477C18.0423 12.2532 17.8992 12.3125 17.75 12.3125H14.75C14.6008 12.3125 14.4577 12.2532 14.3523 12.1477C14.2468 12.0423 14.1875 11.8992 14.1875 11.75C14.1875 11.6008 14.2468 11.4577 14.3523 11.3523C14.4577 11.2468 14.6008 11.1875 14.75 11.1875H17.75C17.8992 11.1875 18.0423 11.2468 18.1477 11.3523C18.2532 11.4577 18.3125 11.6008 18.3125 11.75ZM12.3125 11.75C12.3125 11.8992 12.2532 12.0423 12.1477 12.1477C12.0423 12.2532 11.8992 12.3125 11.75 12.3125H10.25C10.1008 12.3125 9.95774 12.2532 9.85225 12.1477C9.74676 12.0423 9.6875 11.8992 9.6875 11.75C9.6875 11.6008 9.74676 11.4577 9.85225 11.3523C9.95774 11.2468 10.1008 11.1875 10.25 11.1875H11.75C11.8992 11.1875 12.0423 11.2468 12.1477 11.3523C12.2532 11.4577 12.3125 11.6008 12.3125 11.75Z"
+                      fill="black"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <p>Onlayn ödəniş</p>
+                </div>
+              </button>
+
+              <div class="ps-3 d-flex align-items-center">
+                <div class="dropdown dropdown-center">
+                  <button
+                    class="dropdown-toggle languageButton"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Aze
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Eng</a></li>
+                    <li><a class="dropdown-item" href="#">Rus</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-sm-6 col-12 d-flex justify-content-end headerRight">
-            <div>
-              <div class="sekil">
-                <img src="assets/image/card.jpg" />
-              </div>
-              <div class="odenis">
-                <p>Onlayn ödəniş</p>
-              </div>
+        </header>
+        <hr />
+        <nav>
+          <div class="myNavbar">
+            <div class="logo166">
+              <img src="./assets/image/logo.jpg " alt="166 cargo" />
             </div>
-            <div>
-              <div class="dropdown">
-                <button
-                  class="btn btn-secondary dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  AZE
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">ENG</a></li>
-                  <li><a class="dropdown-item" href="#">RUS</a></li>
-                  <li><a class="dropdown-item" href="#">TUR</a></li>
+
+            <div class="navbarRight">
+              <div class="search">
+                <div>
+                  <svg
+                    width="21"
+                    height="20"
+                    viewBox="0 0 21 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18.2131 19.6966L13.9244 15.4079C13.2501 15.9923 12.4634 16.4474 11.5643 16.7734C10.6653 17.0993 9.71 17.2622 8.69855 17.2622C6.27104 17.2622 4.21441 16.4193 2.52865 14.7336C0.842882 13.0478 0 11.0137 0 8.63111C0 6.24857 0.842882 4.21441 2.52865 2.52865C4.21441 0.842882 6.25981 0 8.66483 0C11.0474 0 13.0759 0.842882 14.7504 2.52865C16.425 4.21441 17.2622 6.24857 17.2622 8.63111C17.2622 9.59762 17.1049 10.5304 16.7902 11.4295C16.4755 12.3286 16.0035 13.1714 15.3742 13.9581L19.7303 18.2468C19.9326 18.4266 20.0337 18.657 20.0337 18.938C20.0337 19.2189 19.9213 19.4718 19.6966 19.6966C19.4943 19.8989 19.247 20 18.9548 20C18.6626 20 18.4154 19.8989 18.2131 19.6966ZM8.66483 15.2393C10.4855 15.2393 12.0364 14.5931 13.3175 13.3007C14.5987 12.0083 15.2393 10.4517 15.2393 8.63111C15.2393 6.81049 14.5987 5.25397 13.3175 3.96155C12.0364 2.66913 10.4855 2.02292 8.66483 2.02292C6.82173 2.02292 5.25397 2.66913 3.96155 3.96155C2.66913 5.25397 2.02292 6.81049 2.02292 8.63111C2.02292 10.4517 2.66913 12.0083 3.96155 13.3007C5.25397 14.5931 6.82173 15.2393 8.66483 15.2393Z"
+                      fill="#E4E4E4"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <input type="text" placeholder="Search" />
+                </div>
+              </div>
+
+              <div class="navbarLinks">
+                <ul>
+                  <li><a href="#"> Əsas səhifə </a></li>
+                  <li>
+                    <div class="dropdown dropdown-center">
+                      <button
+                        class="dropdown-toggle languageButton"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Şirkətimiz
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">DEA</a></li>
+                        <li><a class="dropdown-item" href="#">BCC</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown dropdown-center">
+                      <button
+                        class="dropdown-toggle languageButton"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Xidmətlər
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Daşima</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Catdirilma</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="dropdown dropdown-center">
+                      <button
+                        class="dropdown-toggle languageButton"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Blog
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Blog 1</a></li>
+                        <li><a class="dropdown-item" href="#">Blog 2</a></li>
+                        <li><a class="dropdown-item" href="#">Blog 3</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li><a href="#"> Əlaqə </a></li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <hr />
-      <nav>
-        <div class="navbar">
-          <div class="col-6 qutu">
-            <div class="col-sm-5 col-4 karqo">
-              <img src="assets/image/166karqo.jpg" />
-            </div>
-            <div class="search">
-              <div>
+
+              <div class="hamburgerMenu">
+                <img src="./assets/image/icon/menu.png" alt="Hamburger menu" />
+              </div>
+
+              <button type="button" class="bookACall ms-4">
                 <div>
-                  <form class="d-flex" role="search">
-                    <input
-                      class="form-control me-2"
-                      type="search"
-                      placeholder="Search"
-                      aria-label="Search"
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M21.97 18.33C21.97 18.69 21.89 19.06 21.72 19.42C21.55 19.78 21.33 20.12 21.04 20.44C20.55 20.98 20.01 21.37 19.4 21.62C18.8 21.87 18.15 22 17.45 22C16.43 22 15.34 21.76 14.19 21.27C13.04 20.78 11.89 20.12 10.75 19.29C9.6 18.45 8.51 17.52 7.47 16.49C6.44 15.45 5.51 14.36 4.68 13.22C3.86 12.08 3.2 10.94 2.72 9.81C2.24 8.67 2 7.58 2 6.54C2 5.86 2.12 5.21 2.36 4.61C2.6 4 2.98 3.44 3.51 2.94C4.15 2.31 4.85 2 5.59 2C5.87 2 6.15 2.06 6.4 2.18C6.66 2.3 6.89 2.48 7.07 2.74L9.39 6.01C9.57 6.26 9.7 6.49 9.79 6.71C9.88 6.92 9.93 7.13 9.93 7.32C9.93 7.56 9.86 7.8 9.72 8.03C9.59 8.26 9.4 8.5 9.16 8.74L8.4 9.53C8.29 9.64 8.24 9.77 8.24 9.93C8.24 10.01 8.25 10.08 8.27 10.16C8.3 10.24 8.33 10.3 8.35 10.36C8.53 10.69 8.84 11.12 9.28 11.64C9.73 12.16 10.21 12.69 10.73 13.22C11.27 13.75 11.79 14.24 12.32 14.69C12.84 15.13 13.27 15.43 13.61 15.61C13.66 15.63 13.72 15.66 13.79 15.69C13.87 15.72 13.95 15.73 14.04 15.73C14.21 15.73 14.34 15.67 14.45 15.56L15.21 14.81C15.46 14.56 15.7 14.37 15.93 14.25C16.16 14.11 16.39 14.04 16.64 14.04C16.83 14.04 17.03 14.08 17.25 14.17C17.47 14.26 17.7 14.39 17.95 14.56L21.26 16.91C21.52 17.09 21.7 17.3 21.81 17.55C21.91 17.8 21.97 18.05 21.97 18.33Z"
+                      stroke="white"
+                      stroke-width="1.5"
+                      stroke-miterlimit="10"
                     />
-                    <button class="btn btn-outline-success" type="submit">
-                      Search
-                    </button>
-                  </form>
+                  </svg>
                 </div>
-              </div>
+                <div>Book a call</div>
+              </button>
             </div>
           </div>
-          <div>
-            <ul class="nav justify-content-end">
-              <li class="nav-item link">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Əsas səhifə</a
-                >
-              </li>
-              <li class="nav-item link">
-                <a class="nav-link" href="#">Şirkətimiz</a>
-              </li>
-              <li class="nav-item link">
-                <a class="nav-link" href="#">Xidmətlər</a>
-              </li>
-              <li class="nav-item link">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item link">
-                <a class="nav-link">Əlaqə</a>
-              </li>
-              <li class="nav-item link book">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Book a call</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <hr class="hr" />
-      <main>
-        <div class="subOption">
-          <ul>
-            <li>
-              <a href="#"></a
-              ><svg
-                width="18"
-                height="20"
-                viewBox="0 0 18 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7.54916 0.533177C8.38719 -0.173819 9.61281 -0.173819 10.4508 0.533177L17.2008 6.22772C17.7076 6.65523 18 7.28447 18 7.94747V17.7504C18 18.7169 17.2165 19.5004 16.25 19.5004H13.25C12.2835 19.5004 11.5 18.7169 11.5 17.7504V12.7504C11.5 12.3362 11.1642 12.0004 10.75 12.0004H7.25C6.83579 12.0004 6.5 12.3362 6.5 12.7504V17.7504C6.5 18.7169 5.7165 19.5004 4.75 19.5004H1.75C0.783502 19.5004 0 18.7169 0 17.7504V7.94747C0 7.28447 0.292405 6.65523 0.799155 6.22772L7.54916 0.533177Z"
-                  fill="#242424"
-                />
-              </svg>
-            </li>
-            <li><a href="#"></a>Parent    </li>
-            <li><a href="#">Child     </a></li>
-            <li><a href="#">Sub Option     </a></li>
-            <li><a href="#">The Chosen One   </a></li>
-          </ul>
-        </div>
-        <section>
-          <div class="link">
+        </nav>
+        <hr />
+        <main>
+          <section class="breadcrumbSection">
             <ul>
-              <li class="haqqimizda"><a href="#"></a>Haqqimizda</li>
-              <li><a href="#"></a>Komandamiz</li>
-              <li><a href="#"></a>Mediada biz</li>
-              <li><a href="#"></a>Blog</li>
-              <li><a href="#"></a>Tez-tez verilən suallar</li>
-              <li><a href="#"></a>Qalereya</li>
+              <li>
+                <a href="#">
+                  <svg
+                    width="18"
+                    height="20"
+                    viewBox="0 0 18 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.54916 0.533177C8.38719 -0.173819 9.61281 -0.173819 10.4508 0.533177L17.2008 6.22772C17.7076 6.65523 18 7.28447 18 7.94747V17.7504C18 18.7169 17.2165 19.5004 16.25 19.5004H13.25C12.2835 19.5004 11.5 18.7169 11.5 17.7504V12.7504C11.5 12.3362 11.1642 12.0004 10.75 12.0004H7.25C6.83579 12.0004 6.5 12.3362 6.5 12.7504V17.7504C6.5 18.7169 5.7165 19.5004 4.75 19.5004H1.75C0.783502 19.5004 0 18.7169 0 17.7504V7.94747C0 7.28447 0.292405 6.65523 0.799155 6.22772L7.54916 0.533177Z"
+                      fill="#242424"
+                    />
+                  </svg>
+                </a>
+              </li>
+              <li><a href="#"> Parent </a></li>
+              <li><a href="#"> Child </a></li>
+              <li><a href="#"> Sub Option </a></li>
+              <li><a href="#"> The Chosen One </a></li>
             </ul>
-          </div>
-        </section>
-        <section class="secondSection"></section>
-        <section class="haqqimizdaContainer" style="margin-bottom: 104px">
-          <div class="d-flex">
-            <div class="col-sm-6 col-12 d-flex flex-column gap-4">
-              <div class="haqqimizdaContainerLeft1 d-flex">
-                <div class="line"></div>
-                <div class="haqqimizdaTitle">
-                  <p>Haqqimizda</p>
+          </section>
+
+          <section class="secondSection">
+            <ul class="links">
+              <li>
+                <a
+                  href="#"
+                  style="
+                    color: var(--mainColor);
+                    border-bottom: 1px solid var(--mainColor);
+                  "
+                >
+                  Haqqimizda
+                </a>
+              </li>
+              <li><a href="#"> Komandamiz </a></li>
+              <li><a href="#">Mediada biz</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Tez-tez verilən suallar</a></li>
+              <li><a href="#"> Qalereya </a></li>
+            </ul>
+
+            <button class="linksButton">
+              <img src="./assets/image/icon/links.png" alt="Links" />
+            </button>
+          </section>
+
+          <section class="haqqimizdaContainer" style="margin-bottom: 104px">
+            <div class="row d-flex align-items-start">
+              <div class="col-lg-6 col-12 d-flex flex-column gap-4">
+                <div class="haqqimizdaContainerLeft1">
+                  <div class="headLine"></div>
+
+                  <div class="haqqimizdaTitle">
+                    <p>Haqqimizda</p>
+                  </div>
+                </div>
+                <div class="haqqimizdaContainerLeft2">
+                  <p>“166 Yükdaşima və Logistika - Yükünüzü daşiyiriq”</p>
+                </div>
+                <div class="haqqimizdaContainerLeft3">
+                  <img src="./assets/image/cargo.jpg" alt="166 cargo" />
                 </div>
               </div>
-              <div class="haqqimizdaContainerLeft2">
-                <p class="p">
-                  “166 Yükdaşima və Logistika - Yükünüzü daşiyiriq”
+              <div class="col-lg-6 col-12">
+                <p class="about pt-4" style="text-align: justify">
+                  2012-ci ildə fəaliyyətinə bir neçə yük maşini ilə başlayan
+                  “Yüktaksisi.az MMC” brendi hazirda yükdaşima və logistika
+                  sahəsi üzrə ölkənin qabaqcil şirkətlərindən biridir. Yüklərin
+                  daşinmasi yalniz ölkədaxili sərhədlərlə məhdudlaşmir, həmçinin
+                  beynəlxalq arenada da həyata keçirilir.Daim müştərilərimizin
+                  xidmətində olmaq və operativ xidmət göstərmək məqsədilə 166
+                  qaynar xəttimiz 7/24 ölkənin istənilən nöqtəsindən zəngləri
+                  qəbul edir. Göstərdiyimiz xidmətin müştərilərimizə rahat və
+                  əlçatan olmasi məqsədilə xidmət sahələrimiz genişlənməyə davam
+                  edir. Şirkətimiz yükdaşima sahəsi ilə fəaliyyətə başlasa da,
+                  hazirda müxtəlif kompleks xidmətləri - yükdaşima ve logistika,
+                  evakuasiya, işçi qüvvəsi, usta xidməti, anbar xidməti,
+                  təmizlik xidməti və xalça yuma xidmətlərini müştərilərinə
+                  təqdim edib.Xidmətlərimizin daha əlçatan olmasi üçün sərfəli
+                  qiymət və hər bir bölgəyə xidmət anlayişlari ilə çalişiriq.
+                  166 brendi altinda fəaliyyət göstərən hər bir xidmətin
+                  keyfiyyətinin ölçülməsi bizim üçün olduqca vacibdir. Bu
+                  məqsədlə, mütəmadi olaraq müştərilərimizin göstərilən
+                  xidmətlər üzrə fikirlərini öyrənir, təklif və iradlarina
+                  əsasən xidmət keyfiyyətini daim təkmilləşdiririk. (ISO
+                  9001:2015 - Keyfiyyət İdarəetmə Sistemi, ISO 45001:2018 - Peşə
+                  Sağlamliği və Əməyin Təhlükəsizliyi İdarəetmə Sistemi və ISO
+                  14001:2015 - Ətraf Mühitin İdarəetmə sistemi üzrə beynəlxalq
+                  sertifikatlari)
                 </p>
-              </div>
-              <div class="haqqimizdaContainerLeft3">
-                <img class="img" src="assets/image/cargo.jpg" alt="166 cargo" />
-              </div>
-            </div>
-            <div class="col-sm-6 col-12">
-              <p class="about pt-4">
-                2012-ci ildə fəaliyyətinə bir neçə yük maşini ilə başlayan
-                “Yüktaksisi.az MMC” brendi hazirda yükdaşima və logistika sahəsi
-                üzrə ölkənin qabaqcil şirkətlərindən biridir. Yüklərin daşinmasi
-                yalniz ölkədaxili sərhədlərlə məhdudlaşmir, həmçinin beynəlxalq
-                arenada da həyata keçirilir.Daim müştərilərimizin xidmətində
-                olmaq və operativ xidmət göstərmək məqsədilə 166 qaynar xəttimiz
-                7/24 ölkənin istənilən nöqtəsindən zəngləri qəbul edir.
-                Göstərdiyimiz xidmətin müştərilərimizə rahat və əlçatan olmasi
-                məqsədilə xidmət sahələrimiz genişlənməyə davam edir. Şirkətimiz
-                yükdaşima sahəsi ilə fəaliyyətə başlasa da, hazirda müxtəlif
-                kompleks xidmətləri -yükdaşima ve logistika, evakuasiya, işçi
-                qüvvəsi,usta xidməti, anbar xidməti, təmizlik xidməti və xalça
-                yuma xidmətlərini müştərilərinə təqdim edib.Xidmətlərimizin daha
-                əlçatan olmasi üçün sərfəli qiymət və hər bir bölgəyə xidmət
-                anlayişlari ilə çalişiriq. 166 brendi altinda fəaliyyət göstərən
-                hər bir xidmətin keyfiyyətinin ölçülməsi bizim üçün olduqca
-                vacibdir. Bu məqsədlə, mütəmadi olaraq müştərilərimizin
-                göstərilən xidmətlər üzrə fikirlərini öyrənir, təklif və
-                iradlarina əsasən xidmət keyfiyyətini daim təkmilləşdiririk.
-                (ISO 9001:2015 - Keyfiyyət İdarəetmə Sistemi, ISO 45001:2018 -
-                peşə Sağlamliği və Əməyin Təhlükəsizliyi İdarəetmə Sistemi və
-                ISO 14001:2015 - Ətraf Mühitin İdarəetmə sistemi üzrə beynəlxalq
-                sertifikatlari)
-              </p>
-            </div>
-          </div>
-        </section>
-        <div class="d-flex gap-5 class">
-          <section class="xidmetsayiContainer">
-            <div class="d-flex xidmetsayi">
-              <div class="col-sm-6 col-12 d-flex flex-column gap-4">
-                <div class="xidmetsayiContainerLeft1">
-                  <h2>526368+</h2>
-                  <p>Daşinmiş ofis və ev</p>
-                </div>
-                <div class="xidmetsayiContainerLeft2">
-                  <h2>2365+</h2>
-                  <p>Təmizlik edilmiş məkan</p>
-                </div>
-                <div class="xidmetsayiContainerLeft3">
-                  <h2>327166+</h2>
-                  <p>Müştəri rəyləri</p>
-                </div>
-                <div class="xidmetsayiContainerLeft4">
-                  <h2>304264+</h2>
-                  <p>Məmnun qalan müştərilər</p>
-                </div>
               </div>
             </div>
           </section>
-          <section class="butContainer">
-            <div class="col-12">
-              <div class="d-flex">
-                <div class="line"></div>
+
+          <section class="missiyamiz" style="margin-bottom: 120px">
+            <div class="row">
+              <div class="col-lg-6 col-12 missiyamizLeft">
                 <div>
-                  <p class="missiya">Missiyamız</p>
+                  <div>
+                    <p>526368+</p>
+                    <p>Daşinmiş ofis və ev</p>
+                  </div>
+                  <div>
+                    <p>2365+</p>
+                    <p>Təmizlik edilmiş məkan</p>
+                  </div>
+                  <div>
+                    <p>327166+</p>
+                    <p>Müştəri rəyləri</p>
+                  </div>
+                  <div>
+                    <p>304264+</p>
+                    <p>Məmnun qalan müştərilər</p>
+                  </div>
                 </div>
               </div>
-              <div class="butContainerText">
-                <p>
-                  Missiyamiz, müştərilərimizi və partnyorlarimizi dərindən
-                  anlamaq, onlara effektiv logistik həlləri yüksək keyfiyyətdə
-                  təqdim etmək və eyni zamanda əməkdaşlarimizin şəxsi inkişafi
-                  və motivasiyasini üst səviyyədə tutmaqdir.
-                </p>
-              </div>
-              <div>
-                <div class="row">
-                  <div class="col-sm-6 col-12 pr-2 pb-2">
-                    <div class="suretliXidmet">
-                      <div>
-                        <svg
-                          width="25"
-                          height="28"
-                          viewBox="0 0 25 28"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M12.5 4C10.1266 4 7.80655 4.70379 5.83316 6.02236C3.85977 7.34094 2.3217 9.21509 1.41345 11.4078C0.505199 13.6005 0.267559 16.0133 0.730582 18.3411C1.1936 20.6689 2.33649 22.8071 4.01472 24.4853C5.69296 26.1635 7.83115 27.3064 10.1589 27.7694C12.4867 28.2324 14.8995 27.9948 17.0922 27.0866C19.2849 26.1783 21.1591 24.6402 22.4776 22.6668C23.7962 20.6935 24.5 18.3734 24.5 16C24.4964 12.8185 23.2309 9.76839 20.9813 7.51874C18.7316 5.26909 15.6815 4.00364 12.5 4ZM12.5 26C10.5222 26 8.5888 25.4135 6.9443 24.3147C5.29981 23.2159 4.01809 21.6541 3.26121 19.8268C2.50433 17.9996 2.3063 15.9889 2.69215 14.0491C3.07801 12.1093 4.03041 10.3275 5.42894 8.92893C6.82746 7.53041 8.60929 6.578 10.5491 6.19215C12.4889 5.80629 14.4996 6.00433 16.3268 6.7612C18.1541 7.51808 19.7159 8.79981 20.8147 10.4443C21.9135 12.0888 22.5 14.0222 22.5 16C22.497 18.6513 21.4425 21.1931 19.5678 23.0678C17.6931 24.9425 15.1513 25.997 12.5 26ZM18.2075 10.2925C18.3005 10.3854 18.3742 10.4957 18.4246 10.6171C18.4749 10.7385 18.5008 10.8686 18.5008 11C18.5008 11.1314 18.4749 11.2615 18.4246 11.3829C18.3742 11.5043 18.3005 11.6146 18.2075 11.7075L13.2075 16.7075C13.1146 16.8004 13.0043 16.8741 12.8829 16.9244C12.7615 16.9747 12.6314 17.0006 12.5 17.0006C12.3686 17.0006 12.2385 16.9747 12.1171 16.9244C11.9957 16.8741 11.8854 16.8004 11.7925 16.7075C11.6996 16.6146 11.6259 16.5043 11.5756 16.3829C11.5253 16.2615 11.4995 16.1314 11.4995 16C11.4995 15.8686 11.5253 15.7385 11.5756 15.6171C11.6259 15.4957 11.6996 15.3854 11.7925 15.2925L16.7925 10.2925C16.8854 10.1995 16.9957 10.1258 17.1171 10.0754C17.2385 10.0251 17.3686 9.99921 17.5 9.99921C17.6314 9.99921 17.7615 10.0251 17.8829 10.0754C18.0043 10.1258 18.1146 10.1995 18.2075 10.2925ZM8.50001 1C8.50001 0.734784 8.60536 0.48043 8.7929 0.292893C8.98044 0.105357 9.23479 0 9.50001 0H15.5C15.7652 0 16.0196 0.105357 16.2071 0.292893C16.3947 0.48043 16.5 0.734784 16.5 1C16.5 1.26522 16.3947 1.51957 16.2071 1.70711C16.0196 1.89464 15.7652 2 15.5 2H9.50001C9.23479 2 8.98044 1.89464 8.7929 1.70711C8.60536 1.51957 8.50001 1.26522 8.50001 1Z"
-                            fill="#FFCC4D"
-                          />
-                        </svg>
-                      </div>
-                      <div>Sürətli xidmət</div>
-                    </div>
+
+              <div class="col-lg-6 col-12 missiyamizRight">
+                <div
+                  class="haqqimizdaContainerLeft1"
+                  style="margin-bottom: 16px"
+                >
+                  <div class="headLine"></div>
+
+                  <div class="haqqimizdaTitle">
+                    <p>Missiyamiz</p>
                   </div>
-                  <div class="col-sm-6 col-12 pl-2 pb-2">
-                    <div class="suretliXidmet">
+                </div>
+
+                <div
+                  class="haqqimizdaDesc"
+                  style="margin-bottom: 28px; text-align: justify"
+                >
+                  <p>
+                    Missiyamiz, müştərilərimizi və partnyorlarimizi dərindən
+                    anlamaq, onlara effektiv logistik həlləri yüksək keyfiyyətdə
+                    təqdim etmək və eyni zamanda əməkdaşlarimizin şəxsi inkişafi
+                    və motivasiyasini üst səviyyədə tutmaqdir.
+                  </p>
+                </div>
+
+                <div class="col-12 row missiyamizBoxContainer">
+                  <div class="col-sm-6 col-12">
+                    <div class="missiyamizBox">
                       <div>
-                        <svg
-                          width="29"
-                          height="28"
-                          viewBox="0 0 29 28"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M25.7029 1H18.0217C17.7828 0.999827 17.5536 1.0942 17.3842 1.2625L2.02793 16.6188C1.69169 16.9566 1.50293 17.4139 1.50293 17.8906C1.50293 18.3673 1.69169 18.8246 2.02793 19.1625L9.34043 26.475C9.67833 26.8112 10.1356 27 10.6123 27C11.089 27 11.5463 26.8112 11.8842 26.475L27.2342 11.125C27.4025 10.9555 27.4969 10.7263 27.4967 10.4875V2.8C27.4978 2.56383 27.4523 2.32975 27.3626 2.11125C27.273 1.89276 27.141 1.69414 26.9743 1.52685C26.8075 1.35956 26.6094 1.22688 26.3912 1.13646C26.173 1.04605 25.9391 0.999669 25.7029 1Z"
-                            stroke="#FFCC4D"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                        <div>
+                          <img
+                            src="./assets/image/1.png"
+                            alt="Sürətli xidmət"
                           />
-                        </svg>
+                        </div>
+                        <p>Sürətli xidmət</p>
                       </div>
-                      <div>Sərfəli qiymət</div>
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-12 pr-2 pt-2">
-                    <div class="suretliXidmet">
+                  <div class="col-sm-6 col-12">
+                    <div class="missiyamizBox">
                       <div>
-                        <svg
-                          width="28"
-                          height="30"
-                          viewBox="0 0 28 30"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M14 10C12.6739 10 11.4021 10.5268 10.4645 11.4645C9.52678 12.4021 9 13.6739 9 15C9 16.3261 9.52678 17.5979 10.4645 18.5355C11.4021 19.4732 12.6739 20 14 20C15.3261 20 16.5979 19.4732 17.5355 18.5355C18.4732 17.5979 19 16.3261 19 15C19 13.6739 18.4732 12.4021 17.5355 11.4645C16.5979 10.5268 15.3261 10 14 10ZM11 15C11 14.2044 11.3161 13.4413 11.8787 12.8787C12.4413 12.3161 13.2044 12 14 12C14.7956 12 15.5587 12.3161 16.1213 12.8787C16.6839 13.4413 17 14.2044 17 15C17 15.7956 16.6839 16.5587 16.1213 17.1213C15.5587 17.6839 14.7956 18 14 18C13.2044 18 12.4413 17.6839 11.8787 17.1213C11.3161 16.5587 11 15.7956 11 15Z"
-                            fill="#FFCC4D"
+                        <div>
+                          <img
+                            src="./assets/image/2.png"
+                            alt="Sərfəli qiymət"
                           />
-                          <path
-                            fill-rule="evenodd"
-                            clip-rule="evenodd"
-                            d="M13.9667 0.666687C13.3734 0.666687 12.8787 0.666687 12.4734 0.693354C12.059 0.710042 11.6503 0.795659 11.264 0.946687C10.819 1.13081 10.4147 1.40078 10.074 1.7412C9.73336 2.08162 9.46311 2.48581 9.27869 2.93069C9.08536 3.39735 9.03336 3.89069 9.01203 4.42669C9.00964 4.62266 8.95764 4.81484 8.86088 4.98528C8.76412 5.15572 8.62575 5.29887 8.45869 5.40135C8.28646 5.49512 8.09327 5.54368 7.89717 5.54252C7.70107 5.54135 7.50847 5.49049 7.33736 5.39469C6.86269 5.14402 6.40936 4.94269 5.90803 4.87602C5.43062 4.81322 4.94552 4.84508 4.48042 4.96976C4.01532 5.09444 3.57934 5.30951 3.19736 5.60269C2.87388 5.86199 2.59586 6.17336 2.37469 6.52402C2.14803 6.86269 1.90003 7.29069 1.60403 7.80402L1.57069 7.86269C1.27336 8.37602 1.02669 8.80402 0.848025 9.16935C0.661359 9.55069 0.514692 9.92669 0.461359 10.3427C0.334159 11.3067 0.595065 12.2817 1.18669 13.0534C1.49469 13.4547 1.89603 13.7467 2.34936 14.032C2.5182 14.1321 2.65888 14.2735 2.75822 14.4428C2.85756 14.6121 2.91232 14.8038 2.91736 15C2.91232 15.1962 2.85756 15.388 2.75822 15.5573C2.65888 15.7266 2.5182 15.8679 2.34936 15.968C1.89603 16.2534 1.49603 16.5454 1.18669 16.9467C0.893514 17.3287 0.678444 17.7647 0.553763 18.2297C0.429081 18.6948 0.397229 19.1799 0.460025 19.6574C0.514692 20.0734 0.660025 20.4494 0.846692 20.8307C1.02669 21.196 1.27336 21.624 1.57069 22.1374L1.60403 22.196C1.90003 22.7094 2.14803 23.1374 2.37469 23.476C2.61069 23.8267 2.86403 24.1427 3.19736 24.396C3.57924 24.6894 4.01518 24.9047 4.48028 25.0297C4.94538 25.1546 5.43053 25.1866 5.90803 25.124C6.40936 25.0574 6.86269 24.8574 7.33736 24.6054C7.5083 24.5098 7.70066 24.4591 7.8965 24.4579C8.09234 24.4567 8.28529 24.5052 8.45736 24.5987C8.62578 24.6999 8.76536 24.8427 8.86273 25.0134C8.96009 25.184 9.01196 25.3769 9.01336 25.5734C9.03336 26.1094 9.08536 26.6027 9.28003 27.0694C9.46414 27.5144 9.73412 27.9187 10.0745 28.2594C10.415 28.6 10.8191 28.8703 11.264 29.0547C11.6507 29.2147 12.0507 29.2774 12.4734 29.3054C12.8787 29.3334 13.3734 29.3334 13.9667 29.3334H14.0334C14.6267 29.3334 15.1214 29.3334 15.5267 29.3067C15.9507 29.2774 16.3494 29.2147 16.736 29.0534C17.181 28.8692 17.5854 28.5993 17.926 28.2588C18.2667 27.9184 18.5369 27.5142 18.7214 27.0694C18.9147 26.6027 18.9667 26.1094 18.988 25.5734C18.9902 25.3771 19.0421 25.1847 19.1388 25.014C19.2356 24.8433 19.3741 24.7 19.5414 24.5974C19.7137 24.5038 19.907 24.4555 20.1031 24.4569C20.2992 24.4583 20.4917 24.5093 20.6627 24.6054C21.1374 24.856 21.5907 25.0574 22.092 25.1227C23.056 25.2499 24.0311 24.989 24.8027 24.3974C25.136 24.1414 25.3894 23.8267 25.6254 23.476C25.852 23.1374 26.1 22.7094 26.396 22.196L26.4294 22.1374C26.7267 21.624 26.9734 21.196 27.152 20.8307C27.3387 20.4494 27.4854 20.072 27.5387 19.6574C27.6659 18.6934 27.405 17.7183 26.8134 16.9467C26.5054 16.5454 26.104 16.2534 25.6507 15.968C25.4818 15.8679 25.3412 15.7266 25.2418 15.5573C25.1425 15.388 25.0877 15.1962 25.0827 15C25.0827 14.6294 25.2854 14.2614 25.6507 14.032C26.104 13.7467 26.504 13.4547 26.8134 13.0534C27.1065 12.6714 27.3216 12.2354 27.4463 11.7703C27.571 11.3052 27.6028 10.8201 27.54 10.3427C27.4772 9.93282 27.3465 9.53628 27.1534 9.16935C26.9256 8.72639 26.6842 8.29062 26.4294 7.86269L26.396 7.80402C26.1525 7.36946 25.8955 6.94259 25.6254 6.52402C25.4041 6.17384 25.1261 5.86292 24.8027 5.60402C24.4208 5.31061 23.9849 5.0953 23.5198 4.97039C23.0547 4.84548 22.5695 4.81341 22.092 4.87602C21.5907 4.94269 21.1374 5.14269 20.6627 5.39469C20.4917 5.49025 20.2994 5.54098 20.1036 5.54215C19.9077 5.54331 19.7148 5.49488 19.5427 5.40135C19.3751 5.29919 19.2362 5.15618 19.139 4.98572C19.0418 4.81526 18.9894 4.62292 18.9867 4.42669C18.9667 3.89069 18.9147 3.39735 18.72 2.93069C18.5359 2.48569 18.2659 2.08132 17.9255 1.74067C17.5851 1.40002 17.1809 1.12977 16.736 0.945354C16.3494 0.785354 15.9494 0.722687 15.5267 0.694687C15.1214 0.666687 14.6267 0.666687 14.0334 0.666687H13.9667ZM12.0294 2.79335C12.132 2.75069 12.288 2.71202 12.6094 2.68935C12.9387 2.66669 13.3654 2.66669 14 2.66669C14.6347 2.66669 15.0614 2.66669 15.3907 2.68935C15.712 2.71202 15.868 2.75069 15.9707 2.79335C16.38 2.96269 16.704 3.28669 16.8734 3.69602C16.9267 3.82402 16.9707 4.02535 16.988 4.50135C17.028 5.55735 17.5734 6.57469 18.5414 7.13335C19.5094 7.69202 20.6627 7.65602 21.5974 7.16269C22.0187 6.94002 22.2147 6.87735 22.3534 6.86002C22.7914 6.80213 23.2346 6.92059 23.5854 7.18935C23.6734 7.25735 23.7854 7.37335 23.9654 7.64002C24.1507 7.91469 24.364 8.28402 24.6814 8.83335C24.9987 9.38269 25.2107 9.75335 25.356 10.0494C25.4987 10.3387 25.5427 10.4934 25.556 10.604C25.6139 11.0421 25.4955 11.4853 25.2267 11.836C25.1414 11.9467 24.9894 12.0854 24.5867 12.3387C23.6907 12.9014 23.0827 13.8827 23.0827 15C23.0827 16.1174 23.6907 17.0987 24.5867 17.6614C24.9894 17.9147 25.1414 18.0534 25.2267 18.164C25.496 18.5147 25.6134 18.9574 25.556 19.396C25.5427 19.5067 25.4974 19.6627 25.356 19.9507C25.2107 20.248 24.9987 20.6174 24.6814 21.1667C24.364 21.716 24.1494 22.0854 23.9654 22.36C23.7854 22.6267 23.6734 22.7427 23.5854 22.8107C23.2346 23.0794 22.7914 23.1979 22.3534 23.14C22.2147 23.1227 22.02 23.06 21.5974 22.8374C20.664 22.344 19.5094 22.3067 18.5414 22.8654C17.5734 23.424 17.028 24.4427 16.988 25.4987C16.9707 25.9747 16.9267 26.176 16.8734 26.304C16.7896 26.5064 16.6668 26.6903 16.5119 26.8452C16.357 27.0001 16.1731 27.1229 15.9707 27.2067C15.868 27.2494 15.712 27.288 15.3907 27.3107C15.0614 27.3334 14.6347 27.3334 14 27.3334C13.3654 27.3334 12.9387 27.3334 12.6094 27.3107C12.288 27.288 12.132 27.2494 12.0294 27.2067C11.827 27.1229 11.6431 27.0001 11.4882 26.8452C11.3333 26.6903 11.2105 26.5064 11.1267 26.304C11.0734 26.176 11.0294 25.9747 11.012 25.4987C10.972 24.4427 10.4267 23.4254 9.45869 22.8667C8.49069 22.308 7.33736 22.344 6.40269 22.8374C5.98136 23.06 5.78536 23.1227 5.64669 23.14C5.20861 23.1979 4.76546 23.0794 4.41469 22.8107C4.32669 22.7427 4.21469 22.6267 4.03469 22.36C3.78387 21.9697 3.54509 21.5717 3.31869 21.1667C3.00136 20.6174 2.78936 20.2467 2.64403 19.9507C2.50136 19.6614 2.45736 19.5067 2.44403 19.396C2.38614 18.9579 2.5046 18.5148 2.77336 18.164C2.85869 18.0534 3.01069 17.9147 3.41336 17.6614C4.30936 17.0987 4.91736 16.1174 4.91736 15C4.91736 13.8827 4.30936 12.9014 3.41336 12.3387C3.01069 12.0854 2.85869 11.9467 2.77336 11.836C2.5046 11.4853 2.38614 11.0421 2.44403 10.604C2.45736 10.4934 2.50269 10.3374 2.64403 10.0494C2.78936 9.75202 3.00136 9.38269 3.31869 8.83335C3.63603 8.28402 3.85069 7.91469 4.03469 7.64002C4.21469 7.37335 4.32669 7.25735 4.41469 7.18935C4.76546 6.92059 5.20861 6.80213 5.64669 6.86002C5.78536 6.87735 5.98003 6.94002 6.40269 7.16269C7.33603 7.65602 8.49069 7.69335 9.45869 7.13335C10.4267 6.57469 10.972 5.55735 11.012 4.50135C11.0294 4.02535 11.0734 3.82402 11.1267 3.69602C11.296 3.28669 11.62 2.96269 12.0294 2.79335Z"
-                            fill="#FFCC4D"
-                          />
-                        </svg>
+                        </div>
+                        <p>Sərfəli qiymət</p>
                       </div>
-                      <div>Kompleks həllər</div>
                     </div>
                   </div>
 
-                  <div class="col-sm-6 col-12 pl-2 pt-2">
-                    <div class="suretliXidmet">
+                  <div class="col-sm-6 col-12">
+                    <div class="missiyamizBox">
                       <div>
-                        <svg
-                          width="32"
-                          height="32"
-                          viewBox="0 0 32 32"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M11 25C11 25.5304 10.7893 26.0391 10.4142 26.4142C10.0392 26.7893 9.53046 27 9.00002 27C8.46959 27 7.96088 26.7893 7.58581 26.4142C7.21074 26.0391 7.00002 25.5304 7.00002 25M11 25C11 24.4696 10.7893 23.9609 10.4142 23.5858C10.0392 23.2107 9.53046 23 9.00002 23C8.46959 23 7.96088 23.2107 7.58581 23.5858C7.21074 23.9609 7.00002 24.4696 7.00002 25M11 25H19M7.00002 25H4.50002C4.1022 25 3.72067 24.842 3.43936 24.5607C3.15806 24.2794 3.00002 23.8978 3.00002 23.5V19M19 25H22M19 25V19M3.00002 19V8.82C2.99791 8.4549 3.13131 8.10199 3.37441 7.82957C3.61751 7.55716 3.95303 7.38462 4.31602 7.34534C8.76011 6.88448 13.2399 6.88448 17.684 7.34534C18.4374 7.42267 19 8.06267 19 8.82V10.0973M3.00002 19H19M26 25C26 25.5304 25.7893 26.0391 25.4142 26.4142C25.0392 26.7893 24.5305 27 24 27C23.4696 27 22.9609 26.7893 22.5858 26.4142C22.2107 26.0391 22 25.5304 22 25M26 25C26 24.4696 25.7893 23.9609 25.4142 23.5858C25.0392 23.2107 24.5305 23 24 23C23.4696 23 22.9609 23.2107 22.5858 23.5858C22.2107 23.9609 22 24.4696 22 25M26 25H27.5C28.328 25 29.0054 24.328 28.9534 23.5013C28.6856 19.0982 27.2027 14.8554 24.6694 11.244C24.4278 10.906 24.1127 10.6272 23.7478 10.4286C23.3829 10.23 22.9777 10.1167 22.5627 10.0973H19M19 10.0973V19"
-                            stroke="#FFCC4D"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                        <div>
+                          <img
+                            src="./assets/image/3.png"
+                            alt="Kompleks həllər"
                           />
-                        </svg>
+                        </div>
+                        <p>Kompleks həllər</p>
                       </div>
-                      <div>Nəqliyyat infrastrukturunun inkişafi</div>
+                    </div>
+                  </div>
+
+                  <div class="col-sm-6 col-12">
+                    <div class="missiyamizBox">
+                      <div>
+                        <div>
+                          <img
+                            src="./assets/image/4.png"
+                            alt="Nəqliyyat infrastrukturunun inkişafi"
+                          />
+                        </div>
+                        <p class="text-center">
+                          Nəqliyyat infrastrukturunun inkişafi
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-        </div>
+
           <section class="bizNecəIşleyirik">
-          <div>
-            <div class="haqqimizdaContainerLeft1 mb-5">
-              <div class="headLine"></div>
+            <div>
+              <div class="haqqimizdaContainerLeft1 mb-5">
+                <div class="headLine"></div>
 
-              <div class="haqqimizdaTitle">
-                <p>Biz necə işləyirik?</p>
+                <div class="haqqimizdaTitle">
+                  <p>Biz necə işləyirik?</p>
+                </div>
+              </div>
+
+              <ul class="row">
+                <div>
+                  <li class="col-md-6 col-12">
+                    <div class="xidmetLogo">1</div>
+                    <div class="xidmetTitle">
+                      166-ya zəng etməklə sifariş verirsiniz
+                    </div>
+                    <div class="xidmetDesc">
+                      Birbaşa 166-ya zəng edə və ya sayt vasitəsilə “Sizə
+                      zəng”-dən istifadə etməklə biz əlaqə saxlaya bilərik 166
+                      və ya
+                    </div>
+                  </li>
+                </div>
+                <div>
+                  <li class="col-md-6 col-12">
+                    <div class="xidmetLogo selectedLogo">2</div>
+                    <div class="xidmetTitle">
+                      Operatorlarimiz sifarişlərinizi qəbul edir
+                    </div>
+                    <div class="xidmetDesc">
+                      Operatorumuz sizə xidmətlə bağli məlumatlari verir, ödəniş
+                      üsulu və şərtlərlə bağli məlumatlandirir.
+                    </div>
+                  </li>
+                </div>
+                <div>
+                  <li class="col-md-6 col-12">
+                    <div class="xidmetLogo">3</div>
+                    <div class="xidmetTitle">
+                      Əməkdaşlarimiz sifariçşi yerinə yetirir
+                    </div>
+                    <div class="xidmetDesc">
+                      Əməkdaşlarimiz təyin olunan ünvanda arzuladiğiniz xidmət
+                      üzrə sizin sifarişinizi yerinə yetirir
+                    </div>
+                  </li>
+                </div>
+                <div>
+                  <li class="col-md-6 col-12">
+                    <div class="xidmetLogo">4</div>
+                    <div class="xidmetTitle">Sifariş tamamlanir</div>
+                    <div class="xidmetDesc">
+                      Təyin olunan xidmət üzrə əməkdaşlarimiz sifarişinizi
+                      tamamlayir
+                    </div>
+                  </li>
+                </div>
+                <div>
+                  <li class="col-md-6 col-12">
+                    <div class="xidmetLogo">5</div>
+                    <div class="xidmetTitle">
+                      Xidmət bitdikdən sonra siz ödəniş edirsiniz
+                    </div>
+                    <div class="xidmetDesc">
+                      Ödənişin rahatliği üçün sizə həm onlayn, həm də nağd
+                      ödəniş imkanlari təqdim edilir.
+                    </div>
+                  </li>
+                </div>
+                <div>
+                  <li class="col-md-6 col-12">
+                    <div class="xidmetLogo">6</div>
+                    <div class="xidmetTitle">
+                      Göstərdiyimiz xidmətin keyfiyyəti ölçülür
+                    </div>
+                    <div class="xidmetDesc">
+                      Xidmətdən məmnunluğunu ölçmək məqsədilə müştəri
+                      məmmuniyyəti şöbəmiz sizinlə əlaqə saxlayir.
+                    </div>
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </section>
+          <section class="myCorusel" style="margin-bottom: 100px">
+            <div>
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide"
+                data-bs-ride="true"
+              >
+                <div class="carousel-indicators">
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                  <button
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row myCard pt-3 pb-5">
+                      <div class="col-md-4 col-sm-10 col-12">
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="caruselImage">
+                            <img src="assets/image/man1.png" alt="man" />
+                          </div>
+                        </div>
+
+                        <div class="caruselStars">
+                          <img src="assets/image/star.png" alt="star" /><img
+                            src="assets/image/star.png"
+                            alt="star"
+                          /><img src="assets/image/star.png" alt="star" /><img
+                            src="assets/image/star.png"
+                            alt="star"
+                          /><img src="assets/image/star.png" alt="star" />
+                        </div>
+                        <div class="caruselDesc">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Iste explicabo id mollitia expedita sunt,
+                          accusantium minima modi est eligendi? Consequatur!
+                        </div>
+                        <hr />
+                        <div class="caruselAuthor">
+                          <p>Lisa Smith</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row myCard pt-3 pb-5">
+                      <div class="col-sm-4 col-12">
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="caruselImage">
+                            <img src="assets/image/man2.webp" alt="man" />
+                          </div>
+                        </div>
+
+                        <div class="caruselStars">
+                          <img src="assets/image/star.png" alt="star" /><img
+                            src="assets/image/star.png"
+                            alt="star"
+                          /><img src="assets/image/star.png" alt="star" /><img
+                            src="assets/image/star.png"
+                            alt="star"
+                          /><img src="assets/image/star.png" alt="star" />
+                        </div>
+                        <div class="caruselDesc">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Iste explicabo id mollitia expedita sunt,
+                          accusantium minima modi est eligendi? Consequatur!
+                        </div>
+                        <hr />
+                        <div class="caruselAuthor">
+                          <p>Lisa Smith</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row myCard pt-3 pb-5">
+                      <div class="col-sm-4 col-12">
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="caruselImage">
+                            <img src="assets/image/man3.png" alt="man" />
+                          </div>
+                        </div>
+
+                        <div class="caruselStars">
+                          <img src="assets/image/star.png" alt="star" /><img
+                            src="assets/image/star.png"
+                            alt="star"
+                          /><img src="assets/image/star.png" alt="star" /><img
+                            src="assets/image/star.png"
+                            alt="star"
+                          /><img src="assets/image/star.png" alt="star" />
+                        </div>
+                        <div class="caruselDesc">
+                          Lorem ipsum dolor, sit amet consectetur adipisicing
+                          elit. Iste explicabo id mollitia expedita sunt,
+                          accusantium minima modi est eligendi? Consequatur!
+                        </div>
+                        <hr />
+                        <div class="caruselAuthor">
+                          <p>Lisa Smith</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
+          </section>
+        </main>
+      </div>
 
-            <ul class="row">
-              <div>
-                <li class="col-sm-6 col-12">
-                  <div class="xidmetLogo">1</div>
-                  <div class="xidmetTitle">
-                    166-ya zəng etməklə sifariş verirsiniz
-                  </div>
-                  <div class="xidmetDesc">
-                    Birbaşa 166-ya zəng edə və ya sayt vasitəsilə “Sizə
-                    zəng”-dən istifadə etməklə biz əlaqə saxlaya bilərik 166 və
-                    ya
-                  </div>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 col-12">
+              <div class="footerTitle">
+                <p>Xidmətlər</p>
+              </div>
+              <ul>
+                <li><a href="#"> Transport </a></li>
+                <li><a href="#"> Logistika </a></li>
+                <li><a href="#"> Yükdaşima </a></li>
+                <li><a href="#"> Xalça yuma </a></li>
+                <li><a href="#"> Karqo xidməti </a></li>
+                <li>
+                  <a href="#" class="hamisinaBax">
+                    <p style="color: #312402; font: 500 16px var(--mainFont)">
+                      Hamisina bax
+                    </p>
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="margin-top: 2.5px"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M1.12497 8.99998C1.12497 8.85079 1.18423 8.70772 1.28972 8.60223C1.39521 8.49674 1.53829 8.43748 1.68747 8.43748H14.9546L11.4142 4.89823C11.3619 4.84593 11.3204 4.78384 11.2921 4.71551C11.2638 4.64718 11.2493 4.57394 11.2493 4.49998C11.2493 4.42602 11.2638 4.35278 11.2921 4.28445C11.3204 4.21611 11.3619 4.15403 11.4142 4.10173C11.4665 4.04943 11.5286 4.00794 11.5969 3.97964C11.6653 3.95134 11.7385 3.93677 11.8125 3.93677C11.8864 3.93677 11.9597 3.95134 12.028 3.97964C12.0963 4.00794 12.1584 4.04943 12.2107 4.10173L16.7107 8.60173C16.7631 8.65398 16.8047 8.71605 16.833 8.78439C16.8614 8.85273 16.876 8.92599 16.876 8.99998C16.876 9.07397 16.8614 9.14723 16.833 9.21557C16.8047 9.2839 16.7631 9.34598 16.7107 9.39823L12.2107 13.8982C12.1584 13.9505 12.0963 13.992 12.028 14.0203C11.9597 14.0486 11.8864 14.0632 11.8125 14.0632C11.7385 14.0632 11.6653 14.0486 11.5969 14.0203C11.5286 13.992 11.4665 13.9505 11.4142 13.8982C11.3619 13.8459 11.3204 13.7838 11.2921 13.7155C11.2638 13.6472 11.2493 13.5739 11.2493 13.5C11.2493 13.426 11.2638 13.3528 11.2921 13.2844C11.3204 13.2161 11.3619 13.154 11.4142 13.1017L14.9546 9.56248H1.68747C1.53829 9.56248 1.39521 9.50321 1.28972 9.39773C1.18423 9.29224 1.12497 9.14916 1.12497 8.99998Z"
+                        fill="#312402"
+                      />
+                    </svg>
+                  </a>
                 </li>
-              </div>
-              <div>
-                <li class="col-sm-6 col-12">
-                  <div class="xidmetLogo selectedLogo">2</div>
-                  <div class="xidmetTitle">
-                    Operatorlarimiz sifarişlərinizi qəbul edir
-                  </div>
-                  <div class="xidmetDesc">
-                    Operatorumuz sizə xidmətlə bağli məlumatlari verir, ödəniş
-                    üsulu və şərtlərlə bağli məlumatlandirir.
-                  </div>
-                </li>
-              </div>
-              <div>
-                <li class="col-sm-6 col-12">
-                  <div class="xidmetLogo">3</div>
-                  <div class="xidmetTitle">
-                    Əməkdaşlarimiz sifariçşi yerinə yetirir
-                  </div>
-                  <div class="xidmetDesc">
-                    Əməkdaşlarimiz təyin olunan ünvanda arzuladiğiniz xidmət
-                    üzrə sizin sifarişinizi yerinə yetirir
-                  </div>
-                </li>
-              </div>
-              <div>
-                <li class="col-sm-6 col-12">
-                  <div class="xidmetLogo">4</div>
-                  <div class="xidmetTitle">Sifariş tamamlanir</div>
-                  <div class="xidmetDesc">
-                    Təyin olunan xidmət üzrə əməkdaşlarimiz sifarişinizi
-                    tamamlayir
-                  </div>
-                </li>
-              </div>
-              <div>
-                <li class="col-sm-6 col-12">
-                  <div class="xidmetLogo">5</div>
-                  <div class="xidmetTitle">
-                    Xidmət bitdikdən sonra siz ödəniş edirsiniz
-                  </div>
-                  <div class="xidmetDesc">
-                    Ödənişin rahatliği üçün sizə həm onlayn, həm də nağd ödəniş
-                    imkanlari təqdim edilir.
-                  </div>
-                </li>
-              </div>
-              <div>
-                <li class="col-sm-6 col-12">
-                  <div class="xidmetLogo">6</div>
-                  <div class="xidmetTitle">
-                    Göstərdiyimiz xidmətin keyfiyyəti ölçülür
-                  </div>
-                  <div class="xidmetDesc">
-                    Xidmətdən məmnunluğunu ölçmək məqsədilə müştəri məmmuniyyəti
-                    şöbəmiz sizinlə əlaqə saxlayir.
-                  </div>
-                </li>
-              </div>
-            </ul>
-          </div>
-        </section>
-        <section class="myCorusel" style="margin-bottom: 100px">
-          <div>
-            <div
-              id="carouselExampleIndicators"
-              class="carousel slide"
-              data-bs-ride="true"
-            >
-              <div class="carousel-indicators">
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="0"
-                  class="active"
-                  aria-current="true"
-                  aria-label="Slide 1"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="1"
-                  aria-label="Slide 2"
-                ></button>
-                <button
-                  type="button"
-                  data-bs-target="#carouselExampleIndicators"
-                  data-bs-slide-to="2"
-                  aria-label="Slide 3"
-                ></button>
-              </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="row myCard pt-3 pb-5">
-                    <div class="col-sm-4 col-12">
-                      <div
-                        class="d-flex justify-content-center align-items-center"
-                      >
-                        <div class="caruselImage">
-                          <img src="assets/image/man1.png" alt="man" />
-                        </div>
-                      </div>
+              </ul>
+            </div>
 
-                      <div class="caruselStars">
-                        <img src="assets/image/star.png" alt="star" /><img
-                          src="assets/image/star.png"
-                          alt="star"
-                        /><img src="assets/image/star.png" alt="star" /><img
-                          src="assets/image/star.png"
-                          alt="star"
-                        /><img src="assets/image/star.png" alt="star" />
-                      </div>
-                      <div class="caruselDesc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Iste explicabo id mollitia expedita sunt,
-                        accusantium minima modi est eligendi? Consequatur!
-                      </div>
-                      <hr />
-                      <div class="caruselAuthor">
-                        <p>Lisa Smith</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row myCard pt-3 pb-5">
-                    <div class="col-sm-4 col-12">
-                      <div
-                        class="d-flex justify-content-center align-items-center"
-                      >
-                        <div class="caruselImage">
-                          <img src="assets/image/man2.webp" alt="man" />
-                        </div>
-                      </div>
-
-                      <div class="caruselStars">
-                        <img src="assets/image/star.png" alt="star" /><img
-                          src="assets/image/star.png"
-                          alt="star"
-                        /><img src="assets/image/star.png" alt="star" /><img
-                          src="assets/image/star.png"
-                          alt="star"
-                        /><img src="assets/image/star.png" alt="star" />
-                      </div>
-                      <div class="caruselDesc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Iste explicabo id mollitia expedita sunt,
-                        accusantium minima modi est eligendi? Consequatur!
-                      </div>
-                      <hr />
-                      <div class="caruselAuthor">
-                        <p>Lisa Smith</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row myCard pt-3 pb-5">
-                    <div class="col-sm-4 col-12">
-                      <div
-                        class="d-flex justify-content-center align-items-center"
-                      >
-                        <div class="caruselImage">
-                          <img src="assets/image/man3.png" alt="man" />
-                        </div>
-                      </div>
-
-                      <div class="caruselStars">
-                        <img src="assets/image/star.png" alt="star" /><img
-                          src="assets/image/star.png"
-                          alt="star"
-                        /><img src="assets/image/star.png" alt="star" /><img
-                          src="assets/image/star.png"
-                          alt="star"
-                        /><img src="assets/image/star.png" alt="star" />
-                      </div>
-                      <div class="caruselDesc">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing
-                        elit. Iste explicabo id mollitia expedita sunt,
-                        accusantium minima modi est eligendi? Consequatur!
-                      </div>
-                      <hr />
-                      <div class="caruselAuthor">
-                        <p>Lisa Smith</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+            <div class="col-md-4 col-12">
+              <div class="footerTitle">
+                <p>Faydali linklər</p>
               </div>
+              <ul>
+                <li><a href="#"> Haqqimizda </a></li>
+                <li><a href="#"> Bizim komanda </a></li>
+                <li><a href="#"> Mediada biz </a></li>
+                <li><a href="#"> Bloq </a></li>
+                <li><a href="#"> Tez-tez verilən suallar </a></li>
+                <li>
+                  <a href="#">Qalereya</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-md-4 col-12">
+              <div class="footerTitle">
+                <p>Əlaqə</p>
+              </div>
+
+              <ul>
+                <li>
+                  Ünvan : Yeni Həyat plaza 55 Zərifə Əliyeva, Baki, Azərbaycan
+                </li>
+                <li>Əlaqə nömrəsi : +994 (50) 253 46 16</li>
+                <li>Elektron poçt : info@166.az</li>
+                <li class="mt-4">
+                  <ul class="d-flex gap-4">
+                    <li>
+                      <a href="#"
+                        ><img src="./assets/image/facebook.png" alt="facebook"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="./assets/image/instagram.png"
+                          alt="instagram"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./assets/image/linkedin.png" alt="linkedin"
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./assets/image/youtube.png" alt="youtube"
+                      /></a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+            <hr class="col-12 footerHr" />
+
+            <div class="col-12 copyRight">
+              <p>© 2022 | 166.az | Bütün hüquqlar qorunur166tech.az</p>
             </div>
           </div>
-        </section>
-      </main>
-      <footer></footer>
+        </div>
+      </footer>
     </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
