@@ -1,0 +1,24 @@
+
+.xidmetLogo.selected {
+  background-color: var(--mainColor);
+}
+.ustaXidmeti{
+  display: flex;
+}
+.logo166 img {
+ width: 200px;
+}
+.number{
+  display: flex;
+  flex-direction: column;
+}
+.number input{
+  margin: 5px;
+}
+.ustaXidmetiBottom{
+  display: flex;
+}
+.ustaXidmetiBottom div div{
+  display: flex;
+  margin: 30px;
+}
