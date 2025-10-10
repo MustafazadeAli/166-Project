@@ -1,24 +1,53 @@
-
 .xidmetLogo.selected {
   background-color: var(--mainColor);
 }
-.ustaXidmeti{
+.ustaXidmeti {
   display: flex;
 }
 .logo166 img {
- width: 200px;
+  width: 200px;
 }
-.number{
+.number {
   display: flex;
   flex-direction: column;
 }
-.number input{
+.number input {
   margin: 5px;
 }
-.ustaXidmetiBottom{
+.ustaXidmetiBottom {
   display: flex;
 }
-.ustaXidmetiBottom div div{
+.ustaXidmetiBottom div div {
   display: flex;
   margin: 30px;
+}
+
+.ustaXidmetiRight > p {
+  font: bold 30px var(--mainFont);
+  color: var(--mainColor);
+}
+
+.ustaXidmetiRight > div > input:last-child {
+  background-color: var(--mainColor);
+}
+
+.xidmetLogo {
+  width: 44px;
+  height: 44px;
+  border-radius: 54px;
+  background: rgba(230, 137, 6, 0.459);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 20px var(--mainFont);
+  color: white;
+  margin-bottom: 18px;
+}
+.ustaXidmetiBottom > div div {
+  display: flex;
+  align-items: center;
+}
+
+.ustaXidmetiBottom > div div p {
+  font: 500 20px var(--mainFont);
 }

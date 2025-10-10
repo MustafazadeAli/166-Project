@@ -575,15 +575,7 @@ ul.socialLinks li a img:hover {
   border-right: 8px solid var(--mainColor);
 }
 
-.xidmetLogo {
-  width: 44px;
-  height: 44px;
-  border-radius: 54px;
-  background: #d7d7d7;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font: 600 20px var(--mainFont);
-  color: white;
-  margin-bottom: 18px;
+.links li.linkClicked a {
+  color: var(--mainColor);
+  border-bottom: 1px solid var(--mainColor);
 }
